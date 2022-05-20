@@ -1,0 +1,37 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-list__item {
+  flex-basis: calc(100% / 4-0.625rem);
+  &:not(:last-child) {
+    margin-right: 0.625rem;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: $primary-white;
+  color: $icon-primary-color;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white;
+  }
+}
+.social-list__link--footer {
+  background-color: $icon-footer-background-color;
+  color: $primary-white;
+}
+.social-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+}

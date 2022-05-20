@@ -1,0 +1,66 @@
+/*breakpoints vars*/
+$mobile-brk-point: 30rem;
+$tablet-brk-point: 48rem;
+$desktop-brk-point: 100rem;
+
+/*font vars*/
+$primary-font: Roboto, sans-serif;
+
+/*color vars*/
+$primary-background-color: #fff;
+$secondary-background-color: #f5f4fa;
+$accent-background-color: #2f303a;
+
+$primary-text-color: #757575;
+$secondary-text-color: #212121;
+
+$accent-color: #2196f3;
+$primary-white: #fff;
+
+$logo-font: Raleway, sans-serif;
+$logo-color: black;
+$logo-accent-color: #2196f3;
+
+$hero-text-color: #fff;
+$hero-background-image: url(../../images/hero-bg.jpg);
+
+$about-title-block-color: rgba(47, 48, 58, 0.8);
+
+$member-info-title-color: #212121;
+
+$clients-border-color: #afb1b8;
+
+$button-base-color: #f5f4fa;
+$button-hover-color: #188ce8;
+$button-active-color: #2196f3;
+$button-text-color: #212121;
+$button-primary-color: #2196f3;
+
+$footer-text-color: rgba(255, 255, 255, 0.6);
+
+$icon-primary-color: #afb1b8;
+$icon-contacts-color: #757575;
+$icon-footer-background-color: rgba(255, 255, 255, 0.1);
+$icon-goals-background-color: #f5f4fa;
+$icon-form-color: #212121;
+
+$form-input-border-color: rgba(255, 255, 255, 0.3);
+$form_placeholder-color: rgba(255, 255, 255, 0.6);
+
+$prtfl-item-border-color: #eeeeee;
+$prtfl-overlay-color: rgba(33, 150, 243, 0.9);
+
+$backdrop-background-color: rgba(0, 0, 0, 0.2);
+$modal-background-color: rgba(24, 140, 232, 0.3);
+$modal-close-border-color: rgba(0, 0, 0, 0.1);
+$modal-close-icon-color: black;
+$modal-close-hover-color: #2196f3;
+
+$modal-form-input-border: rgba(33, 33, 33, 0.2);
+$modal-form-input-hover-border: #2196f3;
+$modal-form-input-color: #757575;
+$modal-form-icon-color: #212121;
+$modal-form-icon-hover-color: #2196f3;
+$modal-form-placeholder-color: rgba(117, 117, 117, 0.5);
+$modal-terms-link-color: #2196f3;
+$modal-custom-checkbox-color: #2196f3;

@@ -1,0 +1,133 @@
+.form__lable {
+  display: block;
+  text-align: left;
+
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 0.315rem;
+}
+.form__lable--terms {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+}
+.input {
+  width: 100%;
+  height: 2.5rem;
+
+  border-radius: 0.25rem;
+  border: 0.062rem solid $modal-form-input-border;
+
+  padding: 0 0.875rem 0 2.62rem;
+
+  color: $modal-form-input-color;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border-color: $modal-form-input-hover-border;
+  }
+  &:focus {
+    border-color: $modal-form-input-hover-border;
+    outline: 0.062rem solid $modal-form-input-hover-border;
+  }
+}
+.input__thmb {
+  position: relative;
+
+  margin-bottom: 0.625rem;
+
+  &:focus-within .form__icon,
+  &:hover .form__icon {
+    fill: $modal-form-icon-hover-color;
+  }
+}
+.input--comment {
+  height: 7.5rem;
+  padding: 1rem;
+  resize: none;
+
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+.input--comment::placeholder {
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+
+  color: $modal-form-placeholder-color;
+}
+.form__icon {
+  position: absolute;
+
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+
+  width: 1.125rem;
+  height: 1.125rem;
+
+  fill: $modal-form-icon-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__section {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  margin-bottom: 1.875rem;
+}
+/*.checkbox__thmb {
+  position: relative;
+  margin-right: 0.625rem;
+}*/
+.checkbox {
+  visibility: hidden;
+  margin-right: 0.625rem;
+}
+.custom-checkbox {
+  display: inline-block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  width: 1rem;
+  height: 1rem;
+
+  border-radius: 0.125rem;
+  border: 0.125rem solid $modal-form-icon-color;
+}
+.checkbox:checked + .custom-checkbox {
+  border: transparent;
+  background-color: $modal-custom-checkbox-color;
+  background-image: url("../images/icons/checkbox-full.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+}
+.link--terms {
+  color: $modal-terms-link-color;
+
+  &:focus {
+    outline: 0.062rem solid;
+  }
+}
+
+/*first variant to change icon color*/
+/*.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}*/

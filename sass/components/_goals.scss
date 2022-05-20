@@ -1,0 +1,39 @@
+.goals {
+  font-size: 0.875rem; /*14px*/
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.goals__title {
+  font-size: 0.875rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+.goals__list {
+  display: flex;
+}
+.goals__item {
+  flex-basis: calc(100% / 4-1.875rem);
+  padding-right: 0.25rem;
+
+  &:not(:last-child) {
+    margin-right: 1.875rem;
+  }
+}
+.goals__picture {
+  display: flex;
+  height: 7.5rem;
+  border-radius: 0.25rem;
+
+  margin-bottom: 1.875rem;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: $icon-goals-background-color;
+}
+.goals__icon {
+  display: block;
+  width: 4.375rem;
+}

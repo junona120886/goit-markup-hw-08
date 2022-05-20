@@ -1,0 +1,33 @@
+.body {
+  font-family: $primary-font;
+  color: $primary-text-color;
+  background-color: $primary-background-color;
+}
+.title {
+  margin: 0;
+  color: $secondary-text-color;
+}
+.title--hidden {
+  width: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+.paragraf {
+  margin: 0;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.address {
+  font-style: normal;
+}
+.image {
+  display: block;
+}
+.link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}

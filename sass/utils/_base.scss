@@ -1,0 +1,127 @@
+.main-container {
+  width: 75rem;
+
+  padding-left: 0.937rem;
+  padding-right: 0.937rem;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.section {
+  padding-top: 5.875rem;
+  padding-bottom: 5.875rem;
+}
+.section-title {
+  font-size: 2.25rem;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.section-title--margins {
+  margin-bottom: 3.125rem;
+}
+.button-base {
+  display: block;
+  justify-content: center;
+
+  padding: 0.625rem 1.375rem;
+
+  border-radius: 0.25rem;
+  border-style: none;
+
+  background-color: $button-base-color;
+  color: $button-text-color;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+    color: $primary-white;
+  }
+  &:active {
+    background-color: $button-active-color;
+    color: $primary-white;
+  }
+}
+.button-base--decoration {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-base--primary {
+  width: 12.5rem;
+  height: 3.125rem;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $button-primary-color;
+  color: $primary-white;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+  }
+}
+.button-base--filter {
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0rem 0.125rem 0.125rem rgba(0, 0, 0, 0.12),
+      0rem 0.062rem 0.125rem rgba(0, 0, 0, 0.08),
+      0rem 0.187rem 0.062rem rgba(0, 0, 0, 0.1);
+  }
+}
+.button-base--mailing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-base--filter {
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
+}
+.logo {
+  display: inline-block;
+
+  color: $logo-color;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-accent {
+  color: $logo-accent-color;
+}
+.icon {
+  display: block;
+  fill: currentColor;
+}
+.contacts-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.625rem;
+}
