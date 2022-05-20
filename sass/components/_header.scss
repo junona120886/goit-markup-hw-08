@@ -1,26 +1,39 @@
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  min-height: 80px;
+  min-height: 3.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: $tablet-brk-point) {
+    min-height: 5rem;
+    padding-top: 1.562rem;
+    padding-bottom: 1.562rem;
+  }
 }
 .header__logo {
-  margin-right: 95px;
+  @media screen and (min-width: $desktop-brk-point) {
+    margin-right: 5.937rem;
+  }
 }
 .navigation-list {
-  display: flex;
-  width: 100%;
-  align-items: center;
+  display: none;
 
-  color: $secondary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.navigation-list__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: $tablet-brk-point) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    letter-spacing: 0.02em;
+
+    &__item:not(:last-child) {
+      margin-right: 3.125rem;
+    }
+  }
 }
 .navigation__link {
   display: block;
@@ -51,21 +64,34 @@
   }
 }
 .header__contacts-list {
-  display: flex;
+  display: none;
 
-  align-items: center;
-  margin-left: auto;
+  @media screen and (min-width: $tablet-brk-point) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop-brk-point) {
+    display: flex;
+
+    align-items: center;
+    margin-left: auto;
+  }
 }
 .header__contacts-item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: $tablet-brk-point) {
+    margin-bottom: 0.625rem;
+  }
+  @media screen and (min-width: $desktop-brk-point) {
+    margin-right: 1.875rem;
+  }
 }
 .header__contacts-link {
   display: flex;
 
   color: $icon-contacts-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 0.875;
+  line-height: 1rem;
   letter-spacing: 0.02em;
 
   transition-property: color;

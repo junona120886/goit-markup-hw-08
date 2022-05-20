@@ -1,29 +1,58 @@
 .main-container {
-  width: 75rem;
-
   padding-left: 0.937rem;
   padding-right: 0.937rem;
 
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $mobile-brk-point) {
+    width: $mobile-brk-point;
+  }
+  @media screen and (min-width: $tablet-brk-point) {
+    width: $tablet-brk-point;
+  }
+  @media screen and (min-width: $desktop-brk-point) {
+    /*width: 75rem;*/
+    width: $desktop-brk-point;
+  }
 }
 .flex-container {
   display: flex;
   align-items: center;
+
+  &--header {
+    justify-content: space-between;
+  }
 }
 .section {
-  padding-top: 5.875rem;
-  padding-bottom: 5.875rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+
+  @media screen and (min-width: $desktop-brk-point) {
+    padding-top: 5.875rem;
+    padding-bottom: 5.875rem;
+  }
 }
 .section-title {
-  font-size: 2.25rem;
-  line-height: 1.17;
+  font-size: 1.75rem;
+  line-height: 2.06rem;
   letter-spacing: 0.03em;
   text-align: center;
+
+  &--margins {
+    margin-bottom: 1.875rem;
+  }
+
+  @media screen and (min-width: $desktop-brk-point) {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+
+    &--margins {
+      margin-bottom: 3.125rem;
+    }
+  }
 }
-.section-title--margins {
-  margin-bottom: 3.125rem;
-}
+
 .button-base {
   display: block;
   justify-content: center;
@@ -108,10 +137,16 @@
   color: $logo-color;
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 1.625rem;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
   text-decoration: none;
+
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop-brk-point) {
+    font-size: 1.625rem;
+    line-height: 1.93rem;
+  }
 }
 .logo-accent {
   color: $logo-accent-color;
@@ -121,7 +156,13 @@
   fill: currentColor;
 }
 .contacts-icon {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.625rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  margin-right: 0.5rem;
+
+  @media screen and (min-width: $desktop-brk-point) {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.625rem;
+  }
 }
