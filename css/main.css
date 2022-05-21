@@ -48,6 +48,7 @@
   padding-right: 0.937rem;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid green;
 }
 
 @media screen and (min-width: 30rem) {
@@ -87,6 +88,7 @@
 .section {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 75rem) {
@@ -506,6 +508,7 @@
 
 .goals__list {
   /*margin-top: -1.875rem;*/
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 48rem) {
@@ -651,7 +654,7 @@
 }
 
 .team-list {
-  margin-top: -1.875rem;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 48rem) {
@@ -659,9 +662,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 48rem) and (max-width: 75rem) {
+  .team-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: -1.875rem;
+    margin-top: -1.875rem;
   }
 }
 
@@ -672,44 +684,46 @@
   }
 }
 
-.team-list .team-list__item {
-  margin-top: 1.875rem;
+.team-list__item {
+  display: block;
 }
 
-@media screen and (min-width: 48rem) {
-  .team-list .team-list__item {
+@media screen and (min-width: 48rem) and (max-width: 75rem) {
+  .team-list__item {
     -ms-flex-preferred-size: calc(100% / 2-1.875rem);
         flex-basis: calc(100% / 2-1.875rem);
     margin-left: 1.875rem;
+    margin-top: 1.875rem;
   }
 }
 
 @media screen and (min-width: 75rem) {
-  .team-list .team-list__item {
+  .team-list__item {
     -ms-flex-preferred-size: calc(100% / 4-1.875rem);
         flex-basis: calc(100% / 4-1.875rem);
   }
-  .team-list .team-list__item:not(:last-child) {
+  .team-list__item:not(:last-child) {
     margin-right: 1.875rem;
   }
 }
 
 .member-card {
-  width: 100%;
-  min-height: 23rem;
+  /*width: 100%;*/
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   text-align: center;
   background-color: #fff;
   -webkit-box-shadow: 0rem 0.125rem 0.062rem rgba(0, 0, 0, 0.2), 0rem 0.062rem 0.062rem rgba(0, 0, 0, 0.14), 0rem 0.062rem 0.187rem rgba(0, 0, 0, 0.12);
           box-shadow: 0rem 0.125rem 0.062rem rgba(0, 0, 0, 0.2), 0rem 0.062rem 0.062rem rgba(0, 0, 0, 0.14), 0rem 0.062rem 0.187rem rgba(0, 0, 0, 0.12);
+  outline: 1px solid red;
 }
 
 .member-card__photo {
-  display: block;
+  /*display: block;*/
   width: 100%;
-  max-height: 16.25rem;
+  /*max-height: 16.25rem;*/
   margin: 0;
+  outline: 1px solid red;
 }
 
 .member-info {

@@ -18,7 +18,7 @@
 }
 .goals__list {
   /*margin-top: -1.875rem;*/
-
+  outline: 1px solid red;
   @media screen and (min-width: $tablet-brk-point) {
     display: flex;
     flex-wrap: wrap;

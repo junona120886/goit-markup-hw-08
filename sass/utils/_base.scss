@@ -15,6 +15,7 @@
     /*width: 75rem;*/
     width: $desktop-brk-point;
   }
+  outline: 1px solid green;
 }
 .flex-container {
   display: flex;
@@ -32,6 +33,7 @@
     padding-top: 5.875rem;
     padding-bottom: 5.875rem;
   }
+  outline: 1px solid red;
 }
 .section-title {
   font-size: 1.75rem;
