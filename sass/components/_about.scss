@@ -7,11 +7,13 @@
 .about-list {
   @media screen and (min-width: $desktop-brk-point) {
     display: flex;
+    justify-content: center;
   }
 }
 .about-list__item {
   @media screen and (min-width: $desktop-brk-point) {
-    flex-basis: calc(100% / 3-1.875rem);
+    /*flex-basis: calc(100% / 3 - 30px);*/
+    flex-basis: calc((100%-90px) / 3); /* (100%-90px) / 3   ------ 90px=30px*3*/
 
     &:not(:last-child) {
       margin-right: 1.875rem;

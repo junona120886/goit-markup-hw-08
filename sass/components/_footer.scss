@@ -1,20 +1,33 @@
 .footer {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
-  max-height: 15.625rem;
+  /* max-height: 15.625rem;*/
 
   background-color: $accent-background-color;
 }
 .footer__content {
-  display: flex;
-
-  align-items: baseline;
-  justify-content: left;
+  text-align: center;
+  @media screen and (min-width: $tablet-brk-point) {
+    flex-basis: calc((100% / 2));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop-brk-point) {
+    /*display: flex;*/
+    align-items: baseline;
+    justify-content: left;
+    text-align: left;
+  }
 }
 .footer__adress {
-  margin-right: 4.375rem;
+  @media screen and (min-width: $desktop-brk-point) {
+    margin-right: 4.375rem;
+  }
 }
 .footer__logo {
+  margin-left: auto;
+  margin-right: auto;
   color: $primary-white;
 
   margin-bottom: 1.25rem;
@@ -32,6 +45,10 @@
 }
 .address {
   font-style: normal;
+  margin-bottom: 3.75rem;
+  @media screen and (min-width: $desktop-brk-point) {
+    margin-bottom: 0;
+  }
 }
 .adress-list {
   font-size: 0.875rem;
@@ -61,11 +78,15 @@
   color: $primary-white;
 }
 .footer-mailing {
-  margin-left: auto;
-  justify-content: left;
+  @media screen and (min-width: $desktop-brk-point) {
+    margin-left: auto;
+    justify-content: left;
+  }
 }
 .mailing-form {
-  display: flex;
+  @media screen and (min-width: $desktop-brk-point) {
+    display: flex;
+  }
 }
 .mailing-form__lable {
   display: block;
@@ -73,8 +94,10 @@
   height: 0;
 }
 .mailing-form__input {
-  width: 22.5rem;
+  width: 28.125rem;
   height: 3.125rem;
+
+  margin-bottom: 1.25rem;
 
   border-radius: 0.25rem;
   border: 0.062rem solid $form-input-border-color;
@@ -88,6 +111,10 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $desktop-brk-point) {
+    width: 22.5rem;
+  }
 }
 .mailing-form__input:focus {
   border-color: $accent-color;

@@ -2,8 +2,6 @@
   background-color: $secondary-background-color;
 }
 .team-list {
-  outline: 1px solid red;
-
   @media screen and (min-width: $tablet-brk-point) {
     display: flex;
     justify-content: center;
@@ -19,14 +17,21 @@
 }
 .team-list__item {
   display: block;
+  margin-bottom: 1.875rem;
 
   @media screen and (min-width: $tablet-brk-point) and (max-width: $desktop-brk-point) {
-    flex-basis: calc(100% / 2-1.875rem);
+    flex-basis: calc(100% / 2 - 1.875rem);
+
     margin-left: 1.875rem;
     margin-top: 1.875rem;
+
+    margin-bottom: 0;
   }
   @media screen and (min-width: $desktop-brk-point) {
-    flex-basis: calc(100% / 4-1.875rem);
+    /* flex-basis: calc(100% / 4 - 1.875rem);*/
+    flex-basis: calc((100%-120px) / 4);
+
+    margin-bottom: 0;
 
     &:not(:last-child) {
       margin-right: 1.875rem;
@@ -34,7 +39,7 @@
   }
 }
 .member-card {
-  /*width: 100%;*/
+  width: 100%;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 
@@ -45,16 +50,11 @@
   box-shadow: 0rem 0.125rem 0.062rem rgba(0, 0, 0, 0.2),
     0rem 0.062rem 0.062rem rgba(0, 0, 0, 0.14),
     0rem 0.062rem 0.187rem rgba(0, 0, 0, 0.12);
-
-  outline: 1px solid red;
 }
 .member-card__photo {
-  /*display: block;*/
+  display: block;
   width: 100%;
-  /*max-height: 16.25rem;*/
   margin: 0;
-
-  outline: 1px solid red;
 }
 .member-info {
   padding-top: 1.875rem;
