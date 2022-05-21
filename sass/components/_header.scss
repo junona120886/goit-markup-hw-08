@@ -78,10 +78,12 @@
   }
 }
 .header__contacts-item:not(:last-child) {
-  @media screen and (max-width: $tablet-brk-point) {
+  @media screen and (min-width: $tablet-brk-point) {
     margin-bottom: 0.625rem;
   }
+
   @media screen and (min-width: $desktop-brk-point) {
+    margin-bottom: 0;
     margin-right: 1.875rem;
   }
 }
@@ -90,14 +92,18 @@
 
   color: $icon-contacts-color;
   font-weight: 500;
-  font-size: 0.875;
-  line-height: 1rem;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   letter-spacing: 0.02em;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: $desktop-brk-point) {
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
   &:hover,
   &:focus {
     color: $accent-color;
