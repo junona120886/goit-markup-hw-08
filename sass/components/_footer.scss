@@ -61,10 +61,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:not(:last-child) {
-    margin-bottom: 0.625rem;
+  &__item:not(:last-child) {
+    margin-bottom: 0.5rem;
+    @media screen and (min-width: $desktop-brk-point) {
+      margin-bottom: 0.625rem;
+    }
   }
 }
+
 .adress-list__link {
   text-decoration: none;
   color: currentColor;

@@ -33,11 +33,15 @@
 .goals__item {
   display: block;
 
+  &:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
   @media screen and (min-width: $tablet-brk-point) {
     /*flex-basis: calc(100% / 2 - 1.875rem);*/
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 1.875rem;
-    margin-bottom: 1.875rem;
+    /*margin-bottom: 1.875rem;*/
   }
   @media screen and (min-width: $desktop-brk-point) {
     /* flex-basis: calc(100% / 4 - 1.875rem);*/

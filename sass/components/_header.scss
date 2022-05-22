@@ -52,17 +52,25 @@
   &--current {
     color: $accent-color;
   }
-  &--current::after {
-    content: "";
-    position: absolute;
-    bottom: -34px;
-    left: 0;
-    width: 100%;
-    border: 2px solid $accent-color;
-    border-radius: 2px;
-    background-color: $accent-color;
+  @media screen and (min-width: $tablet-brk-point) {
+    &--current::after {
+      content: "";
+      position: absolute;
+      bottom: -37px;
+      left: 0;
+      width: 100%;
+      border: 2px solid $accent-color;
+      border-radius: 2px;
+      background-color: $accent-color;
+    }
+  }
+  @media screen and (min-width: $desktop-brk-point) {
+    &--current::after {
+      bottom: -34px;
+    }
   }
 }
+
 .header__contacts-list {
   display: none;
 

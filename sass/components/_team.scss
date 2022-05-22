@@ -17,8 +17,10 @@
 }
 .team-list__item {
   display: block;
-  margin-bottom: 1.875rem;
 
+  &:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
   @media screen and (min-width: $tablet-brk-point) and (max-width: $desktop-brk-point) {
     flex-basis: calc(100% / 2 - 1.875rem);
 
