@@ -1284,6 +1284,9 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  /* &--mobile-menu {
+    background-color: $primary-white;
+  }*/
 }
 
 .back-drop.is-hidden {
@@ -1305,6 +1308,31 @@
   transition-property: background-color;
   -webkit-transition-duration: 1500ms;
           transition-duration: 1500ms;
+  /*for mobile menu*/
+  /*&--menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    background-color: $modal-menu-background-color;
+
+    transition-property: none;
+
+    .main-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+  &--menu.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }*/
 }
 
 .modal:hover {
@@ -1332,6 +1360,21 @@
   border: 0.062rem solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   cursor: pointer;
+  /*
+  &--menu {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    top: -2.5rem;
+    right: 0.937rem;
+
+    border: none;
+
+    .modal__close-icon {
+      width: 1.15rem;
+      height: 1.15rem;
+    }
+  }*/
 }
 
 .modal__close:hover > .modal__close-icon,
@@ -1521,4 +1564,146 @@
 /*.form-input:focus + .form-icon {
   fill: var(--accent-color);
 }*/
+.mobile-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #fff;
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+
+.mobile-menu .main-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.mobile-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobile-menu-thmb {
+  margin-top: auto;
+}
+
+.mobile-menu-list {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2.93rem;
+  letter-spacing: 0.02em;
+  color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-list .mobile-menu-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.mobile-menu-list .mobile-menu-item:hover,
+.mobile-menu-list .mobile-menu-item:focus {
+  color: #2196f3;
+}
+
+.mobile-contact-list {
+  margin-bottom: 4rem;
+}
+
+.mobile-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.37rem;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-social-list .mobile-menu-item:not(:last-child) {
+  margin-right: 0.625rem;
+  padding-right: 0.625rem;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (min-width: 30rem) {
+  .mobile-social-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.mobile-menu-item--tel {
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2196f3;
+}
+
+.mobile-menu-item--mail {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  color: #757575;
+}
+
+.mobile-menu-link {
+  color: currentColor;
+}
+
+.menu-close-btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -2.5rem;
+  right: 0.937rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-close-btn:hover > .menu__close-icon,
+.menu-close-btn:focus > .menu__close-icon {
+  fill: #2196f3;
+}
+
+.menu__close-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: black;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /*# sourceMappingURL=main.css.map */
