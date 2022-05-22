@@ -18,6 +18,11 @@
 
   /*outline: 1px solid green;*/
 }
+.main-container--header {
+  @media screen and (max-width: $tablet-brk-point) {
+    position: relative;
+  }
+}
 .flex-container {
   display: flex;
   align-items: center;
@@ -26,6 +31,7 @@
     justify-content: space-between;
   }
 }
+
 .section {
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;

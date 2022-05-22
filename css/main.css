@@ -70,6 +70,12 @@
   }
 }
 
+@media screen and (max-width: 48rem) {
+  .main-container--header {
+    position: relative;
+  }
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,6 +452,40 @@
 
 .header__contacts-link:hover, .header__contacts-link:focus {
   color: #2196f3;
+}
+
+.mobile-menu__button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 48rem) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #212121;
+}
+
+.mobile-menu__icon:hover, .mobile-menu__icon:focus {
+  fill: #2196f3;
 }
 
 .hero {

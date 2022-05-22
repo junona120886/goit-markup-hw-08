@@ -109,3 +109,31 @@
     color: $accent-color;
   }
 }
+.mobile-menu__button {
+  position: absolute;
+  display: flex;
+  right: 0;
+
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet-brk-point) {
+    display: none;
+  }
+}
+.mobile-menu__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  fill: $icon-mobile-menu-color;
+
+  &:hover,
+  &:focus {
+    fill: $icon-mobile-menu-hover-color;
+  }
+}

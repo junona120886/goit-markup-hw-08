@@ -18,7 +18,7 @@
   <body class="body">
     <!--Header-->
     <header class="header">
-      <div class="main-container">
+      <div class="main-container main-container--header">
         <div class="flex-container flex-container--header">
           <a href="./index.html" class="link logo header__logo"
             ><span class="logo-accent">Web</span>Studio</a
@@ -67,6 +67,25 @@
               >
             </li>
           </ul>
+          <!--Mobile menu button-->
+          <!-- <div class="mobile-menu">-->
+          <button class="mobile-menu__button" type="button">
+            <svg class="mobile-menu__icon">
+              <use href="./images/icons/symbol-defs.svg#menu"></use>
+            </svg>
+          </button>
+          <!-- </div>-->
+          <!--mobile menu-->
+          <div class="back-drop is-hidden" data-menu>
+            <div class="modal">
+              <button class="modal__close" type="button" data-menu-close>
+                <svg class="icon modal__close-icon">
+                  <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!--end MENU-->
         </div>
       </div>
     </header>
