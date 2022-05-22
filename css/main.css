@@ -1284,9 +1284,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  /* &--mobile-menu {
-    background-color: $primary-white;
-  }*/
 }
 
 .back-drop.is-hidden {
@@ -1300,43 +1297,23 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 33.125rem;
-  min-height: 36.25rem;
+  width: 28.125rem;
+  min-height: 38rem;
   padding: 2.5rem;
-  background-color: rgba(24, 140, 232, 0.3);
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 1500ms;
-          transition-duration: 1500ms;
-  /*for mobile menu*/
-  /*&--menu {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
+  background-color: #fff;
+  /* transition-property: background-color;
+  transition-duration: 1500ms;
 
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-    background-color: $modal-menu-background-color;
-
-    transition-property: none;
-
-    .main-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-  }
-  &--menu.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  &:hover {
+    background-color: $primary-white;
   }*/
 }
 
-.modal:hover {
-  background-color: #fff;
+@media screen and (min-width: 75rem) {
+  .modal {
+    width: 33.125rem;
+    min-height: 36.25rem;
+  }
 }
 
 .modal__close {
@@ -1360,21 +1337,6 @@
   border: 0.062rem solid rgba(0, 0, 0, 0.1);
   background-color: #fff;
   cursor: pointer;
-  /*
-  &--menu {
-    width: 2.5rem;
-    height: 2.5rem;
-
-    top: -2.5rem;
-    right: 0.937rem;
-
-    border: none;
-
-    .modal__close-icon {
-      width: 1.15rem;
-      height: 1.15rem;
-    }
-  }*/
 }
 
 .modal__close:hover > .modal__close-icon,
@@ -1520,6 +1482,12 @@
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-bottom: 1.875rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .form__section .form__lable--terms {
+    font-size: 0.75rem;
+  }
 }
 
 /*.checkbox__thmb {

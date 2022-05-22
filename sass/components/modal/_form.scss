@@ -89,7 +89,14 @@
   align-items: baseline;
 
   margin-bottom: 1.875rem;
+
+  & .form__lable--terms {
+    @media screen and (max-width: $desktop-brk-point) {
+      font-size: 0.75rem;
+    }
+  }
 }
+
 /*.checkbox__thmb {
   position: relative;
   margin-right: 0.625rem;

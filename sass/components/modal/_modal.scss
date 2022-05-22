@@ -4,42 +4,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 33.125rem;
-  min-height: 36.25rem;
+  width: 28.125rem;
+  min-height: 38rem;
   padding: 2.5rem;
   background-color: $modal-background-color;
 
-  transition-property: background-color;
+  /* transition-property: background-color;
   transition-duration: 1500ms;
 
   &:hover {
     background-color: $primary-white;
-  }
-  /*for mobile menu*/
-  /*&--menu {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-    background-color: $modal-menu-background-color;
-
-    transition-property: none;
-
-    .main-container {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-  }
-  &--menu.is-hidden {
-    opacity: 0;
-    pointer-events: none;
   }*/
+  @media screen and (min-width: $desktop-brk-point) {
+    width: 33.125rem;
+    min-height: 36.25rem;
+  }
 }
 .modal__close {
   position: absolute;
@@ -64,21 +43,7 @@
   &:hover > .modal__close-icon,
   &:focus > .modal__close-icon {
     fill: $modal-close-hover-color;
-  } /*
-  &--menu {
-    width: 2.5rem;
-    height: 2.5rem;
-
-    top: -2.5rem;
-    right: 0.937rem;
-
-    border: none;
-
-    .modal__close-icon {
-      width: 1.15rem;
-      height: 1.15rem;
-    }
-  }*/
+  }
 }
 .modal__close-icon {
   width: 0.687rem;
